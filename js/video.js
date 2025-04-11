@@ -64,21 +64,21 @@ document.querySelector("#slider").addEventListener("input", function() {
     console.log("Volume is " + video.volume);
 });
 
-function updateVolumeInfo() {
-    var volumeDisplay = document.querySelector('#volume');
-    volumeDisplay.textContent = Math.round(video.volume * 100) + "%";
-}
+// function updateVolumeInfo() {
+//     var volumeDisplay = document.querySelector('#volume');
+//     volumeDisplay.textContent = Math.round(video.volume * 100) + "%";
+// }
 
 
-document.querySelector("#vintage").addEventListener("click", function() {
-    if (!video.classList.contains('oldSchool')) {
-        video.classList.add('oldSchool');
-    }
-});
+// document.querySelector("#vintage").addEventListener("click", function() {
+//     if (!video.classList.contains('oldSchool')) {
+//         video.classList.add('oldSchool');
+//     }
+// });
 
 
-document.querySelector("#orig").addEventListener("click", function() {
-    if (video.classList.contains('oldSchool')) {
-        video.classList.remove('oldSchool');
-    }
-});
+// document.querySelector("#orig").addEventListener("click", function() {
+//     if (video.classList.contains('oldSchool')) {
+//         video.classList.remove('oldSchool');
+//     }
+// });
