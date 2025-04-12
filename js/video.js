@@ -6,14 +6,12 @@ window.addEventListener("load", function() {
 });
 
 var video;
-
 window.addEventListener("load", function() {
     console.log("Good job opening the window");
     video = document.querySelector('video');
     video.autoplay = false;
     video.loop = false;
 });
-
 document.querySelector("#play").addEventListener("click", function() {
     console.log("Play Video");
     video.play();
@@ -44,7 +42,6 @@ document.querySelector("#skip").addEventListener("click", function() {
     console.log("Current location is " + video.currentTime);
 });
 
-
 document.querySelector("#mute").addEventListener("click", function() {
     if (video.muted) {
         video.muted = false;
@@ -57,7 +54,6 @@ document.querySelector("#mute").addEventListener("click", function() {
     }
 });
 
-
 document.querySelector("#slider").addEventListener("input", function() {
     video.volume = this.value / 100;
     updateVolumeInfo();
@@ -69,13 +65,11 @@ function updateVolumeInfo() {
     volumeDisplay.textContent = Math.round(video.volume * 100) + "%";
 }
 
-
 document.querySelector("#vintage").addEventListener("click", function() {
     if (!video.classList.contains('oldSchool')) {
         video.classList.add('oldSchool');
     }
 });
-
 
 document.querySelector("#orig").addEventListener("click", function() {
     if (video.classList.contains('oldSchool')) {
